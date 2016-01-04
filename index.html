@@ -9,14 +9,20 @@
             ...
           <link rel="stylesheet" type="text/css" href="../../style/addtohomescreen.css">
           <script src="../../src/addtohomescreen.js"></script>
-          <script>
-          addToHomescreen()
-        </script>
+        
       
       </head>
   <body>
     native thingy app
-      <script type="main.js"></script>
-
+        <div class="hello">Hello World</div>
+        <div class="navigator"></div>
   </body>
+  <script>
+  addToHomescreen()
+  document.querySelector('.navigator').textContent = 'window navigator is:' + ' ' + window.navigator.standalone
+  
+  if(window.navigator.standalone) {
+    document.querySelector('body').style.backgroundColor = 'green'
+  }
+  </script>
 </html>
