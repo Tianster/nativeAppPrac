@@ -35,7 +35,6 @@ function ath (options) {
 
 	return _instance;
 }
-
 // message in all supported languages
 ath.intl = {
 	de_de: {
