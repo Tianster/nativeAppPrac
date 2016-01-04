@@ -9,7 +9,7 @@
 */
 
 // Check for addEventListener browser support (prevent errors in IE<9)
-var _eventListener = 'addEventListener' in window;
+var _eventListener = 'addEventListener' in window
 
 // Check if document is loaded, needed by autostart
 var _DOMReady = false;
